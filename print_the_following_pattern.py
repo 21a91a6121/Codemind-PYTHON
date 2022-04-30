@@ -1,5 +1,5 @@
 n = int(input())
-for row in range(n):
-    for col in range(n):
-        print(chr(65+row),end=" ")
+for row in range(1,n+1):
+    for col in range(1,row+1):
+        print(col,end="")
     print()
