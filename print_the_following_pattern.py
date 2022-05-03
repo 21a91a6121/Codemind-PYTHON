@@ -1,6 +1,8 @@
 n = int(input())
-for row in range(n+1,1,-1):
-    for col in range(1,row):
-        print(col,end="")
+for i in range(n):
+    for j in range(n):
+        if i==j or i+j==n-1:
+            print("x",end='')
+        else:
+            print("0",end='')
     print()
-        
