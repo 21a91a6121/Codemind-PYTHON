@@ -1,8 +1,12 @@
-n = int(input())
-digits = len(str(n))
-s = n**2
-last = s%pow(10,digits)
-if last==n:
-    print("Automorphic Number")
+n=int(input())
+t=n
+l=0
+while(n>0):
+    l+=1
+    n=n//10
+n=t*t
+n=n%(pow(10,l))
+if(t==n):
+    print('Automorphic Number')
 else:
-    print("Not an Automorphic Number")
+    print('Not an Automorphic Number')
