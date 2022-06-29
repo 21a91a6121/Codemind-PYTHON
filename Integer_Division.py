@@ -1,2 +1,2 @@
-num = int(input())
-print(num//10)
+x=int(input())
+print(int(x//10))
