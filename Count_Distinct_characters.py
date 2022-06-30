@@ -1,12 +1,12 @@
-a=input()
-b=''
-count=0
-for i in a:
-    if i!=' ':
-        b=b+i
-b=b.lower()
-c=set(b)
-for j in c:
-    count+=1
-print(count)
-
+n=input()
+n=n.lower()
+n=list(n)
+k=n.copy()
+k=set(k)
+k=list(k)
+if(k.count(" ")>=1):
+    c=k.index(" ")
+    k.pop(c)
+    print(len(k))
+else:
+    print(len(k))
