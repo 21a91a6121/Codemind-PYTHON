@@ -1,10 +1,10 @@
-s1=input()
-s2=input()
-s1=s1.lower()
-s2=s2.lower()
-for i in s1:
-    if i not in s2:
-        print(False)
-        break
+a=input()
+b=input()
+a=a.upper()
+b=b.upper()
+a=sorted(a)
+b=sorted(b)
+if a==b:
+    print("True")
 else:
-    print(True)
+    print("False")
